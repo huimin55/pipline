@@ -11,6 +11,7 @@ pipeline {
                 echo "Run Project Testing ...... "
 
                 echo "Run Project testing....."
+		echo "add ssh key"
             } 
         }
         stage("Deploy") {
