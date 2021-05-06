@@ -14,6 +14,12 @@ pipeline {
 		echo "add ssh key"
             } 
 	}
+        stage("Deploy") {
+            steps {
+                echo "Deploying the project ........"
+            }
+        }
+    }
 	post {
 		always {
 		echo 'This will always run'
@@ -30,10 +36,4 @@ pipeline {
 		changed {
 		echo 'This will run only if the state of the Pipeline has changed'}	
         }
-        stage("Deploy") {
-            steps {
-                echo "Deploying the project ........"
-            }
-        }
-    }
 }
