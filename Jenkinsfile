@@ -11,7 +11,8 @@ pipeline {
                 echo "Run Project Testing ...... "
 
                 echo "Run Project testing....."
-                echo 'hello world' 
+                echo 'hello world'
+            } 
         }
         stage("Deploy") {
             steps {
