@@ -9,8 +9,9 @@ pipeline {
         stage("Test") {
             steps {
                 echo "Run Project Testing ...... "
+
                 echo "Run Project testing....."
-            }
+                echo 'hello world' 
         }
         stage("Deploy") {
             steps {
